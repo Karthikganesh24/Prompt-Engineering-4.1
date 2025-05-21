@@ -29,59 +29,57 @@ o	A functional version or detailed outline of the AI-powered chatbot/solar panel
 o	Analysis of the most impactful prompt patterns, with examples of how they shaped the final design.
 4.	User Testing Results and Improvement Plan:
 o	A report on testing, feedback received, and proposed enhancements for future iterations.
-## Usecase:
-Smart Helpdesk Chatbot for College IT Services
-1. Input Validation Prompt
-Purpose:
-The main aim of the Input Validation Prompt is to ensure that the user’s input is in the correct format. It prevents errors by validating the data before it's processed or used in the system. This is especially important when asking for information like email addresses, student IDs, or phone numbers.
-How It Works:
-The chatbot prompts the user to input data (e.g., an email address), then checks the format to ensure it aligns with the expected pattern. If the user inputs an invalid email or ID, the chatbot provides feedback and asks them to enter the correct information.
-Example Scenario:
-•	The chatbot asks: “Please enter your college email address for password reset.”
-•	The user inputs "john.doe123", which is invalid.
-•	The chatbot responds: “That doesn’t look like a valid email address. Please enter in the format: name@college.edu.”
-Benefits:
-•	Ensures clean data for backend processing.
-•	Prevents errors, like password resets going to the wrong email.
-•	Guides users to submit the correct input format.
-________________________________________
-2. Multi-turn Prompting
-Purpose:
-Multi-turn Prompting is useful for gathering more detailed information from the user through a series of questions. This approach simulates natural conversation, where the chatbot asks follow-up questions based on the user’s previous answers. It’s essential for troubleshooting or solving complex issues.
-How It Works:
-When a user reports an issue (e.g., Wi-Fi connectivity), the chatbot doesn’t give a solution right away. Instead, it asks a series of questions that narrow down the issue step-by-step, ensuring the problem is identified accurately before providing assistance.
-Example Scenario:
-•	User: "I can’t connect to Wi-Fi."
-•	Chatbot: "Are you using a laptop or a mobile device?"
-•	User: "Laptop"
-•	Chatbot: "Is the Wi-Fi network visible in your list of available networks?"
-•	User: "Yes"
-•	Chatbot: "Have you tried restarting your device?"
-Benefits:
-•	Helps the chatbot gather all relevant information to resolve the issue.
-•	Makes the process feel like a natural conversation.
-•	Provides more accurate solutions by considering all possible causes.
-________________________________________
-3. Fallback Prompt
-Purpose:
-Fallback Prompts are used when the chatbot doesn’t understand the user’s input. This can happen if the user types something ambiguous, unclear, or out of context. Instead of ending the conversation, the chatbot gently redirects the user to clarify their request or pick from predefined options.
-How It Works:
-When the chatbot cannot interpret what the user has typed (e.g., "My laptop is crying"), it triggers a fallback prompt asking the user to clarify or rephrase their input. The fallback message also offers help or options for the user to choose from.
-Example Scenario:
-•	User: "My laptop is crying."
-•	Chatbot: "I’m sorry, I didn’t understand that. Could you please rephrase your issue or choose an option from the menu?"
-•	Or: "It looks like you’re describing an issue with your laptop. Please select the type of problem you’re facing: [1] Wi-Fi, [2] Software, [3] Hardware."
-Benefits:
-•	Keeps the conversation going even when input is unclear.
-•	Helps users to express their concerns in different ways.
-•	Reduces frustration by offering guidance or alternative paths.
-Conclusion
-The Smart Helpdesk Chatbot for College IT Services integrates a variety of prompting techniques to enhance user experience and streamline the process of addressing IT-related issues. By implementing Input Validation Prompts, Multi-turn Prompting, and Fallback Prompts, the chatbot becomes a more effective, user-friendly tool for troubleshooting and support.
-•	Input Validation Prompts ensure that users provide accurate data, preventing errors and allowing the system to function smoothly.
-•	Multi-turn Prompting facilitates more accurate problem-solving by guiding users through a series of logical questions to gather all necessary information.
-•	Fallback Prompts maintain engagement and keep the conversation on track, even when the chatbot encounters unclear or unexpected inputs.
-By utilizing these techniques, the chatbot can provide a responsive, efficient, and conversational interface for users. This not only reduces the workload for the IT department but also empowers students and faculty with the ability to quickly resolve technical issues on their own. In the long run, such a system enhances overall productivity and satisfaction by ensuring IT support is available 24/7 with minimal delays.
-In conclusion, a well-designed chatbot using these prompting strategies significantly improves the efficiency and user-friendliness of IT helpdesk services in a college setting, making it a valuable tool for any institution.
+
+# Algorithm:
+
+# output:
+# Use Case 1: Arthritis - Daily Advice
+# Zero-shot Prompt:
+```
+Provides basic, general advice.
+Output: Generic exercise and diet tips.
+```
+
+# Few-shot Prompt:
+```
+Builds on previous advice for continuity and personalization.
+Output: Personalized follow-up with gentle yoga and hydration tips.
+```
+# Role-based Prompt: 
+```
+Assigning a specific role (virtual physiotherapist) results in detailed guidance.
+Output: Comprehensive morning routine with stretches, warm-ups, and breathing practices.
+```
+# Use Case 2: Hypertension - Monitoring and Alerts
+# Chain-of-Thought Prompt: 
+```
+Encourages the AI to reason step-by-step, fostering an informative and educational response.
+Output: Breaks down BP readings, explains potential risks, and recommends medical consultation.
+```
+
+# Few-shot Prompt: 
+```
+Tracks trends in blood pressure readings, providing context to fluctuations.
+Output: Offers a clearer understanding of the readings and lifestyle changes (diet check).
+```
+
+# Use Case 3: Diabetes - Emotional Support
+# Role-based Prompt:
+```
+Positioning the AI as a supportive companion allows for a nurturing, empathetic response.
+Output: Provides motivational words and stress reduction strategies.
+```
+# Multi-modal Prompt: 
+```
+Combining images (sugar readings) with text enhances response by analyzing data and offering calming tips.
+Output: Generates a comprehensive response with visual data analysis, along with voice-based guidance.
+```
+# conclusion:
+The experiment illustrates how using advanced prompting techniques significantly boosts the relevance, personalization, and emotional intelligence of AI health assistants. The tailored responses are particularly beneficial for elderly patients managing chronic conditions. By applying these methods, MediGuide can be made more effective, offering not just clinical support but also empathetic, motivational assistance for users, increasing their trust and satisfaction with the system.
+
+
+
+
 
 ## Result:
 The Smart Helpdesk Chatbot effectively resolved IT issues by using input validation, multi-turn, and fallback prompts, resulting in faster support and improved user experience.
